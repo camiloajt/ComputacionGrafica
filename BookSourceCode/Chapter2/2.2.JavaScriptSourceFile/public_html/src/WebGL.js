@@ -30,7 +30,7 @@ function initializeGL() {
         canvas.getContext("experimental-webgl");
 
     if (gGL !== null) {
-        gGL.clearColor(0.9, 0.9, 0.9, 1.0);  // set the color to be cleared    
+        gGL.clearColor(0.0, 0.0, 1.0, 1.0);  // set the color to be cleared    
     } else {
         document.write("<br><b>WebGL is not supported!</b>");
     }

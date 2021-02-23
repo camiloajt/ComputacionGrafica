@@ -23,7 +23,7 @@
             void main(void) {
                 // for every pixel called (within the square) sets
                 // constant color white with alpha-channel value of 1.0
-                gl_FragColor = vec4(1.0, 1.0, 1.0, 1.0);
+                gl_FragColor = vec4(1.0, 1.0, 1.0, 1.0); //White color
             }
             // End of fragment/pixel shader
         </script>   
@@ -31,9 +31,9 @@
         <!-- the following says there are javascript source code contained in 
              the external source files
         -->
+        <script type="text/javascript" src="src/WebGL.js"></script>
         <script type="text/javascript" src="src/ShaderSupport.js"></script>
         <script type="text/javascript" src="src/VertexBuffer.js"></script>
-        <script type="text/javascript" src="src/WebGL.js"></script>
     </head>
     <!--Use embedded shader code for now, in order to remove async loading complexity.-->
 

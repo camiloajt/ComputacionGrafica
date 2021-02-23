@@ -20,7 +20,7 @@ function MyGame(htmlCanvasID) {
 
     // Step C: Draw!
     // Step C1: Clear the canvas
-    gEngine.Core.clearCanvas([0, 0.8, 0, 1]);
+    gEngine.Core.clearCanvas([0.0, 0.0, 1.0, 1.0]);
 
     // Step C2: Activate the proper shader
     this.mShader.activateShader();
