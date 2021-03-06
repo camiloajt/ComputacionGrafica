@@ -22,10 +22,10 @@ function MyGame(htmlCanvasID) {
 
     // Step C: Draw!
     // Step C1: Clear the canvas
-    gEngine.Core.clearCanvas([0, 0.8, 0, 1]);
+    gEngine.Core.clearCanvas([4/100, 70/100, 250/100, 0.9]);
 
     // Step C2: Activate the proper shader
-    this.mShader.activateShader([0, 0, 1, 1]);
+    this.mShader.activateShader([236/100, 250/100, 4/100, 1]);
 
     // Step C3: Draw with the currently activated geometry and the activated shader
     var gl = gEngine.Core.getGL();
