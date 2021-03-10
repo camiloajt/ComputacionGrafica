@@ -33,7 +33,7 @@ MyGame.prototype.initialize = function () {
         20,                        // width of camera
         [20, 40, 600, 300]         // viewport (orgX, orgY, width, height)
         );
-    this.mCamera.setBackgroundColor([0.8, 0.8, 0.8, 1]);
+    this.mCamera.setBackgroundColor([1, 0.486, 0.078, 1]);
         // sets the background to gray
 
     // Step  B: create the shader
