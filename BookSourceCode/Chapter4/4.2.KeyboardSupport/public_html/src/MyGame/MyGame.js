@@ -84,19 +84,22 @@ MyGame.prototype.update = function () {
     var deltaX = 0.05;
 
     // Step A: test for white square movement
-    if (gEngine.Input.isKeyPressed(gEngine.Input.keys.Right)) {
+    if (gEngine.Input.isKeyPressed(gEngine.Input.keys.Right) 
+        | gEngine.Input.isKeyPressed(gEngine.Input.keys.D)) {
         if (whiteXform.getXPos() > 30) // this is the right-bound of the window
             whiteXform.setPosition(10, 60);
         whiteXform.incXPosBy(deltaX);
     }
 
     // Step  B: test for white square rotation
-    if (gEngine.Input.isKeyClicked(gEngine.Input.keys.Up))
+    if (gEngine.Input.isKeyClicked(gEngine.Input.keys.Up) 
+        | gEngine.Input.isKeyClicked(gEngine.Input.keys.W))
         whiteXform.incRotationByDegree(1);
 
     var redXform = this.mRedSq.getXform();
     // Step  C: test for pulsing the red square
-    if (gEngine.Input.isKeyPressed(gEngine.Input.keys.Down)) {
+    if (gEngine.Input.isKeyPressed(gEngine.Input.keys.Down) 
+        |  gEngine.Input.isKeyPressed(gEngine.Input.keys.S)) {
         if (redXform.getWidth() > 5)
             redXform.setSize(2, 2);
         redXform.incSizeBy(0.05);

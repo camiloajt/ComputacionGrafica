@@ -83,7 +83,7 @@ MyGame.prototype.update = function () {
 
     // Step A: move the white square
     var whiteXform = this.mWhiteSq.getXform();
-    var deltaX = 0.05;
+    var deltaX = 3/60;
     if (whiteXform.getXPos() > 30) // this is the right-bound of the window
         whiteXform.setPosition(10, 60);
     whiteXform.incXPosBy(deltaX);
