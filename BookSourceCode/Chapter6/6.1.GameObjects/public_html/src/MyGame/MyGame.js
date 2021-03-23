@@ -40,7 +40,7 @@ MyGame.prototype.initialize = function () {
         100,                       // width of camera
         [0, 0, 640, 480]           // viewport (orgX, orgY, width, height)
     );
-    this.mCamera.setBackgroundColor([0.8, 0.8, 0.8, 1]);
+    this.mCamera.setBackgroundColor([0.392, 0.462, 0.968, 1]);
             // sets the background to gray
             // 
     // Step B: The dye pack: simply another GameObject
@@ -60,10 +60,10 @@ MyGame.prototype.initialize = function () {
     this.mHero = new Hero(this.kMinionSprite);
 
     // Step E: Create and initialize message output
-    this.mMsg = new FontRenderable("Status Message");
-    this.mMsg.setColor([0, 0, 0, 1]);
-    this.mMsg.getXform().setPosition(1, 2);
-    this.mMsg.setTextHeight(3);
+    this.mMsg = new FontRenderable("¡Que comience el juego!");
+    this.mMsg.setColor([1, 1, 1, 1]);
+    this.mMsg.getXform().setPosition(1, 3);
+    this.mMsg.setTextHeight(4);
 };
 
 // This is the draw function, make sure to setup proper drawing environment, and more
