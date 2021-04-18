@@ -76,7 +76,7 @@ SimpleShader.prototype.getShader = function () { return this.mCompiledShader; };
 SimpleShader.prototype.activateShader = function (pixelColor, aCamera) {
     var gl = gEngine.Core.getGL();
     gl.useProgram(this.mCompiledShader);
-    gl.uniformMatrix4fv(this.mViewProjTransform, false, aCamera.getVPMatrix()); //view port
+    gl.uniformMatrix4fv(this.mViewProjTransform, false, aCamera.getVPMatrix());
     gl.bindBuffer(gl.ARRAY_BUFFER, gEngine.VertexBuffer.getGLVertexRef());
     gl.vertexAttribPointer(this.mShaderVertexPositionAttribute,
         3,              // each element is a 3-float (x,y.z)
